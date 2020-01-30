@@ -21,7 +21,7 @@ end
 
 def can_be_created_in_a_block(args = {})
   
-    movie = Movie.new(args)
+    movie = Movie.new
     args.each {|key, value| movie.send(("#{key}="), value)}
     movie.save
   
