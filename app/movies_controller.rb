@@ -17,19 +17,19 @@ def can_be_created_with_a_hash_of_attributes
   }
     
   movie = Movie.create(attributes)
-  binding.pry
 end
 
 def can_be_created_in_a_block(args = {})
 
-    title = args[:title]
-    release_date = args[:release_date]
+    Movie.create(args)
+  #   title = args[:title]
+  #   release_date = args[:release_date]
 
-  binding.pry
-    Movie.create do |m|
-      m.title = title.value
-      m.release_date = release_date.value
-  end
+  # binding.pry
+  #   Movie.create do |m|
+  #     m.title = title.value
+  #     m.release_date = release_date.value
+  # end
 end
 
 def can_get_the_first_item_in_the_database
