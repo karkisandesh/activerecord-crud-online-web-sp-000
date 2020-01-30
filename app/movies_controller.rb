@@ -17,6 +17,7 @@ def can_be_created_with_a_hash_of_attributes
   }
     
   movie = Movie.create(attributes)
+  binding.pry
 end
 
 def can_be_created_in_a_block(args = {})
