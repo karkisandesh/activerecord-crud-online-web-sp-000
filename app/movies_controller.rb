@@ -21,13 +21,13 @@ end
 
 def can_be_created_in_a_block(args = {})
   
-    movie = Movie.new(args)
+  #   movie = Movie.new(args)
   #   args.each {|key, value|  movie.send(("#{key}="), value)}
   #   movie.save
   
   
-  # #   title = args[:title]
-  # #   release_date = args[:release_date]
+    title = args[:title]
+    release_date = args[:release_date]
 
     movie.collect do |m|
     m.title = title
