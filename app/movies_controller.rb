@@ -21,9 +21,9 @@ end
 
 def can_be_created_in_a_block(args = {})
   
-    dog = Dog.new(attr_hash)
-    attr_hash.each {|key, value| dog.send(("#{key}="), value)}
-    dog.save
+    movie = Movie.new(args)
+    args.each {|key, value|  movie.send(("#{key}="), value)}
+    movie.save
   
   
   #   title = args[:title]
