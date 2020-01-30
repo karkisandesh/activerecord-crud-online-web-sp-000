@@ -22,7 +22,7 @@ end
 def can_be_created_in_a_block(args = {})
   binding.pry
 
-    Movie.create(args)
+    Movie.create
   #   title = args[:title]
   #   release_date = args[:release_date]
 
