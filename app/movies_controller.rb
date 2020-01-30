@@ -23,8 +23,8 @@ def can_be_created_in_a_block(args = {})
   binding.pry
 
    movie = Movie.create
-   movie.title = args[title:]
-   movie.release_date = args[release_date:]
+   movie.title = args[:title]
+   movie.release_date = args[:release_date]
 
   #   title = args[:title]
   #   release_date = args[:release_date]
